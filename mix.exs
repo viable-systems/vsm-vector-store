@@ -5,7 +5,7 @@ defmodule VSMVectorStore.MixProject do
     [
       app: :vsm_vector_store,
       version: "0.1.0",
-      elixir: "~> 1.14",
+      elixir: "~> 1.17",
       start_permanent: Mix.env() == :prod,
       deps: deps(),
       docs: docs(),
@@ -31,7 +31,7 @@ defmodule VSMVectorStore.MixProject do
     [
       # Core dependencies
       {:telemetry, "~> 1.0"},
-      {:telemetry_metrics, "~> 0.6"},
+      {:telemetry_metrics, "~> 1.0"},
       {:jason, "~> 1.0"},
       
       # VSM integration (assuming these are published packages)
